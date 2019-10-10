@@ -4,7 +4,7 @@ This GitHub Action was inspired by the Dev.to post on [How to keep your forked r
 
 ## Usage
 
-```yaml|
+```yml
 name: Fetch Upstream
 
 on: pull_request
