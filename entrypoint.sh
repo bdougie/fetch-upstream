@@ -8,7 +8,7 @@ git config --global user.email "github-actions@users.noreply.github.com"
 
 # If you haven't already added an upstream source, set your upstream
 # to the fork's original source
-git remote add upstream "https://github.com/${UPSTREAM}"
+git remote add upstream "https://github.com/${INPUT_UPSTREAM}"
 
 # Verify upstream is correct, you should see the URL for the upstream fetch and push 
 git remote -v
