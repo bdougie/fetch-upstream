@@ -23,5 +23,4 @@ git merge upstream/master -v
 # [[ `git status --porcelain` ]] || exit
 
 # Push the updated master to your forked remote repository
-git remote set-url origin "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
-git push -u origin master -v
+git "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git" master -v
