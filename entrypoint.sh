@@ -10,9 +10,6 @@ fi
 git config --global user.name "github-actions"
 git config --global user.email "github-actions@users.noreply.github.com"
 
-remote_repo="https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-git remote add fork "${remote_repo}"
-echo "REMOTE: ${remote_repo}"
 git show-ref # useful for debugging
 
 # inspired by https://dev.to/ranewallin/how-to-keep-your-forked-repository-current-38mn
@@ -30,5 +27,7 @@ git fetch upstream
 # Merge the branches and commits from the upstream
 git checkout master
 git merge upstream/master -v
+
+git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 
 git push -u origin master -f
