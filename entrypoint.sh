@@ -31,4 +31,4 @@ git fetch upstream
 git checkout master
 git merge upstream/master -v
 
-git push fork master
+git push fork master -f
