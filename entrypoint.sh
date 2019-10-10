@@ -24,4 +24,4 @@ git merge upstream/master -v
 
 # Push the updated master to your forked remote repository
 git remote set-url origin "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
-git push -u origin master
+git push -u origin master -v
