@@ -2,7 +2,7 @@
 
 ## Usage
 
-```yml|
+```yaml|
 name: Fetch Upstream
 
 on: pull_request
