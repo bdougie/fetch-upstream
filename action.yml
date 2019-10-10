@@ -1,0 +1,9 @@
+name: 'Fetch Upstream'
+description: 'This is a GitHub Action that fetches the upstream and merges that to master when you open a PR.'
+author: 'Brian Douglas'
+inputs:
+  upstream:
+    description: 'The Upstream Repo for your fork'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
