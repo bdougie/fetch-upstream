@@ -24,10 +24,3 @@ git fetch upstream
 
 # Merge the branches and commits from the upstream
 git merge upstream/master -v
-
-# exit if there are no changes to commit
-# [[ `git status --porcelain` ]] || exit
-
-# Push the updated master to your forked remote repository
-git remote add origin "https://x-access-token:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
-git push origin master -f
