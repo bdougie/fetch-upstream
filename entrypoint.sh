@@ -13,7 +13,6 @@ git remote add upstream "https://github.com/$INPUT_UPSTREAM"
 # Verify upstream is correct, you should see the URL for the upstream fetch and push 
 git remote -v
 
-git pull origin master
 # Get all recent branches and commits from the upstream
 git fetch upstream
 
@@ -24,4 +23,4 @@ git merge upstream/master -v
 # [[ `git status --porcelain` ]] || exit
 
 # Push the updated master to your forked remote repository
-git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git" master -v
+git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git" master -f
