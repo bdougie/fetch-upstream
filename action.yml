@@ -3,7 +3,7 @@ description: 'This is a GitHub Action that fetches the upstream and merges that 
 author: 'Brian Douglas'
 inputs:
   upstream:
-    description: 'The Upstream Repo for your fork'
+    description: 'The upstream for your fork'
 runs:
   using: 'docker'
   image: 'Dockerfile'
