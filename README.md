@@ -1,6 +1,6 @@
 # Fetch Upstream
 
-This GitHub Action was inspired by the Dev.to post on [How to keep your forked repository current](https://dev.to/ranewallin/how-to-keep-your-forked-repository-current-38mn?utm_source=digest_mailer&utm_medium=email&utm_campaign=digest_email).
+This GitHub Action was inspired by the Dev.to post on [how to keep your forked repository current](https://dev.to/ranewallin/how-to-keep-your-forked-repository-current-38mn?utm_source=digest_mailer&utm_medium=email&utm_campaign=digest_email).
 
 ## Usage
 
