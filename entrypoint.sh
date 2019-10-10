@@ -8,7 +8,7 @@ git config --global user.email "github-actions@users.noreply.github.com"
 
 # If you haven't already added an upstream source, set your upstream
 # to the fork's original source
-git remote add upstream "https://github.com/${INPUT_UPSTREAM}"
+git remote add upstream "https://github.com/$INPUT_UPSTREAM"
 
 # Verify upstream is correct, you should see the URL for the upstream fetch and push 
 git remote -v
@@ -23,5 +23,5 @@ git merge upstream/master -v
 # [[ `git status --porcelain` ]] || exit
 
 # Push the updated master to your forked remote repository
-git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+git remote set-url origin "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
 git push -u origin master
